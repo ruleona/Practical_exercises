@@ -1,11 +1,9 @@
 from datetime import datetime
 import pytz
 
-
-WHITE ='\033[00m'
+WHITE = '\033[00m'
 GREEN = '\033[0;92m'
 RED = '\033[1;31m'
-
 
 
 class Account:
@@ -43,6 +41,7 @@ class Account:
                 transaction = 'withdrawn'
                 color = RED
             print(f'{color} {amount} {WHITE} {transaction} on {date}')
+
 
 ml = Account('Elena Moiseeva', 90)
 
